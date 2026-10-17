@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090b10" />
+  <meta name="description" content="Official tournament hub for Lala Bazar Mini IPL — fixtures, knockout bracket, team list and match scores." />
+  <title>Lala Bazar Mini IPL | Play for Glory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline"><span class="pulse-dot"></span> COMMUNITY CRICKET • LALA BAZAR, ASSAM <span class="topline-right">THE ROAD TO THE TROPHY</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Lala Bazar Mini IPL home">
+      <span class="brand-mark"><svg viewBox="0 0 52 52" aria-hidden="true"><path d="M26 3 31.5 15.5 45 10 39.5 23.5 49 29 35.5 33.5 38 48 26 39.5 14 48 16.5 33.5 3 29 12.5 23.5 7 10 20.5 15.5Z" fill="currentColor" opacity=".18"/><path d="M17 12h18l-3 7H20Zm3 9h12l-2 11H22Zm-2 14h16l4 6H14Z" fill="currentColor"/><path d="M23 18h6v18h-6z" fill="#090b10"/></svg></span>
+      <span class="brand-copy"><strong>LALA BAZAR <em>MINI IPL</em></strong><small>LOCAL PRIDE. BIG GAME.</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="navLinks"><a href="#fixtures">Fixtures</a><a href="#teams">Teams</a><a href="#bracket">Knockout</a><a href="#rules">Tournament info</a><button class="admin-button" id="adminToggle">⚙ Manage scores</button></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE COMMUNITY CRICKET SHOWDOWN</div>
+        <h1>ONE TOWN.<br><span>ONE TROPHY.</span><br>ALL HEART.</h1>
+        <p>Ten teams enter. Every run matters. One team will own the crown of Lala Bazar.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#fixtures">Explore fixtures <span>↘</span></a><a class="button button-ghost" href="#bracket">View knockout bracket</a></div>
+        <div class="hero-note"><span class="note-icon">✦</span><span>MADE FOR LALA BAZAR<br><b>ASSAM, INDIA</b></span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a cricket trophy">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-star star-one">✦</div><div class="art-star star-two">✦</div>
+        <div class="trophy-shadow"></div>
+        <svg class="trophy" viewBox="0 0 390 440" role="img" aria-label="Golden cricket trophy"><defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0ab"/><stop offset=".25" stop-color="#ffcb43"/><stop offset=".5" stop-color="#c77a14"/><stop offset=".72" stop-color="#ffe17a"/><stop offset="1" stop-color="#8d4b08"/></linearGradient><linearGradient id="darkGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9bf3e"/><stop offset="1" stop-color="#7f4108"/></linearGradient></defs><path d="M108 58h174l-16 94c-7 46-38 76-71 87-33-11-64-41-71-87z" fill="url(#gold)" stroke="#ffe59b" stroke-width="2"/><path d="M109 73H68c0 55 18 91 66 105l8-27c-23-10-32-33-33-78Zm173 0h41c0 55-18 91-66 105l-8-27c23-10 32-33 33-78Z" fill="none" stroke="url(#gold)" stroke-width="17" stroke-linecap="round"/><path d="M130 82h130c-4 43-12 81-27 102-10 14-24 24-38 31-26-15-43-36-52-66-6-20-10-43-13-67Z" fill="#d18c1d" opacity=".55"/><path d="M180 235h30v67h-30z" fill="url(#darkGold)"/><path d="M150 300h90l17 37H133z" fill="url(#gold)"/><path d="M120 335h150v28H120z" fill="url(#darkGold)"/><path d="M101 360h188v37H101z" fill="url(#gold)"/><text x="195" y="146" text-anchor="middle" fill="#713907" font-family="Arial,sans-serif" font-size="18" font-weight="900">MINI IPL</text><path d="m195 157 8 16-8 16-8-16z" fill="#fff2b5"/></svg>
+        <div class="hero-art-label"><span>THE HUNT</span><strong>FOR GLORY</strong><i>✦</i></div>
+      </div>
+      <div class="hero-bottom"><span>EST. FOR THE LOVE OF CRICKET</span><span class="hero-bottom-line"></span><span>PLAY BOLD. PLAY FAIR.</span></div>
+    </section>
+
+    <section class="stats-strip" aria-label="Tournament at a glance"><div class="stat"><strong>10</strong><span>TEAMS</span></div><div class="stat"><strong>09</strong><span>MATCHES</span></div><div class="stat"><strong>04</strong><span>TOURNAMENT DAYS</span></div><div class="stat stat-highlight"><strong>01</strong><span>CHAMPION</span></div></section>
+
+    <section class="section section-fixtures" id="fixtures">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE ROAD TO THE FINAL</div><h2>MATCH <span>FIXTURES</span></h2></div><p>Every match is a knockout.<br>Win and move forward. Lose and you're out.</p></div>
+      <div class="fixture-controls"><div class="filter-tabs" role="group" aria-label="Filter fixtures"><button class="filter-tab active" data-filter="all">All matches <span>09</span></button><button class="filter-tab" data-filter="Play-in">Play-in</button><button class="filter-tab" data-filter="Quarter-final">Quarter-finals</button><button class="filter-tab" data-filter="Semi-final">Semi-finals</button><button class="filter-tab" data-filter="Final">Final</button></div><div class="fixture-time"><span>◷</span> 8:00 AM – 4:30 PM</div></div>
+      <div class="fixture-days" id="fixtureDays"></div>
+      <div class="fixture-footnote"><span class="info-dot">i</span> Match dates and team names are placeholders until the organisers confirm them. Scores can be entered in Manage scores mode.</div>
+    </section>
+
+    <section class="section teams-section" id="teams">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> TEN TEAMS. ONE DREAM.</div><h2>MEET THE <span>CONTENDERS</span></h2></div><p>Put your team on the map.<br>Team names are editable by the organiser.</p></div>
+      <div class="teams-grid" id="teamsGrid"></div>
+    </section>
+
+    <section class="section bracket-section" id="bracket">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> EVERY GAME COUNTS</div><h2>THE KNOCKOUT <span>BRACKET</span></h2></div><p>Follow the winners all the way<br>to the Mini IPL crown.</p></div>
+      <div class="bracket-legend"><span><i class="legend-dot dot-pending"></i> Upcoming</span><span><i class="legend-dot dot-done"></i> Result entered</span><span>Scores update from Manage scores mode</span></div>
+      <div class="bracket-board" id="bracketBoard"></div>
+    </section>
+
+    <section class="champion-banner"><div class="champion-emblem">✦</div><div><span>THE FINISH LINE</span><h2>BUILT BY THE TOWN.<br><em>REMEMBERED BY EVERYONE.</em></h2><p>More than a game. This is Lala Bazar's moment.</p></div><div class="banner-stamp">MINI<br><b>IPL</b><small>ASSAM</small></div></section>
+
+    <section class="section rules-section" id="rules">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> KNOW BEFORE YOU PLAY</div><h2>TOURNAMENT <span>INFO</span></h2></div><p>Fair play first. Respect every team.<br>Let the cricket do the talking.</p></div>
+      <div class="rules-grid"><article class="rule-card"><span class="rule-icon">🏏</span><h3>MATCH FORMAT</h3><p>20 overs per team. Ten-team single-elimination knockout. One loss means elimination.</p></article><article class="rule-card"><span class="rule-icon">◷</span><h3>DAILY WINDOW</h3><p>Matches are scheduled between 8:00 AM and 4:30 PM. Follow the slot listed for each match.</p></article><article class="rule-card"><span class="rule-icon">⚑</span><h3>ONE GROUND</h3><p>All fixtures are planned for a single ground. Arrive early and be ready when called.</p></article><article class="rule-card"><span class="rule-icon">✦</span><h3>RESPECT THE GAME</h3><p>Respect the umpires, opponents and spectators. The organisers' confirmed rules take priority.</p></article></div>
+      <div class="notice"><strong>Organiser notice</strong><span>Tournament dates, venue address, contact number and final team names have not been provided yet. Add confirmed details before sharing the website publicly.</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span class="brand-copy"><strong>LALA BAZAR <em>MINI IPL</em></strong><small>LOCAL PRIDE. BIG GAME.</small></span></a><p>Built for the love of cricket in Lala Bazar, Assam.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><div class="footer-bottom"><span>© <span id="year"></span> LALA BAZAR MINI IPL</span><span>PLAY BOLD. PLAY FAIR.</span></div></footer>
+
+  <div class="admin-overlay" id="adminOverlay" hidden>
+    <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <div class="admin-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> ORGANISER TOOLS</div><h2 id="adminTitle">MANAGE <span>TEAMS & SCORES</span></h2></div><button id="closeAdmin" class="close-button" aria-label="Close">×</button></div>
+      <p class="admin-copy">Edit team names and enter scores. Changes are saved in this browser on this device. This is a static site—scores are not shared live with other visitors.</p>
+      <div class="admin-tabs"><button class="admin-tab active" data-admin-tab="teams">Team names</button><button class="admin-tab" data-admin-tab="scores">Match scores</button></div>
+      <div id="teamEditor" class="editor-list"></div><div id="scoreEditor" class="editor-list" hidden></div>
+      <div class="admin-actions"><button class="button button-ghost" id="resetData">Reset sample data</button><button class="button button-primary" id="saveData">Save changes <span>✓</span></button></div>
+      <div class="save-message" id="saveMessage" aria-live="polite"></div>
+    </div>
+  </div>
+</body>
+</html>
