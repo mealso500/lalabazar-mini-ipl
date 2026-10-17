@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mealso500.github.io/lalabazar-mini-ipl/sitemap.xml
