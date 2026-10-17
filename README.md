@@ -1,6 +1,6 @@
-# Lala Bazar Mini IPL
+# Lala Bazar Mini IPL — by Big Bulls Gangs
 
-A responsive static website for the Lala Bazar Mini IPL community cricket tournament.
+The official responsive website for Lala Bazar Mini IPL, proudly presented by Big Bulls Gangs, for the Lala Bazar, Assam cricket community.
 
 ## Features
 - Mobile-first design with fixtures, teams, knockout bracket and tournament information.
